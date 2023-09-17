@@ -16,7 +16,7 @@ while True:
         minSize=(20, 20)
     ) #find faces in the video frame
     for (x,y,w,h) in faces:
-        cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2) #draw a circle from bottom left (x,y) to top right (x+h, y+h) of detected face
+        cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2) #draw a rectangle from bottom left (x,y) to top right (x+h, y+h) of detected face
     
     cv2.imshow('video',img) #display the frames as a video
     k = cv2.waitKey(30) & 0xff
